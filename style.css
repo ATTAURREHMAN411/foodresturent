@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav {
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+     margin-bottom: 32px;
+     background-color: white;
+     z-index: 50;
+}
+.bar_icon {
+    font-size: 32px;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+opacity: 0.8;
+transition: 0.2s ease-in-out;
+}
+.explore_btn {
+  background: #ffc066;
+  align-self: flex-start;
+}
+/* hero section */
+
+.hero {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tag {
+    background-color: #149f39;
+    color: white;
+    padding: 5px 10px;
+    align-self: flex-start;
+    transition: 0.7 0.2 ease-in-out;
+    cursor: pointer;
+  }
+  .tag:hover{
+    background-color: #fff;
+    color: #149f39;
+    box-shadow: 1px 1px 1px 1px black;
+  }
+  .hero-contact h1 {
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  @media (max-width: 1000px) {
+    .hero {
+      flex-direction: column;
+    }
+    .hero-image {
+     display: flex;
+     justify-content: center;
+    }
+    .hero-image img {
+      width: 80%;
+    }
+    .hero-contact {
+      gap: 10px;
+      padding: 10px;
+    }
+    .hero-contact h1 {
+      font-size: 32px;
+    }
+    .features-section  {
+      flex-direction: column;
+    }
+  }
+  /* section */
+
+  .features-section {
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+  }
+  ,feature img {
+    width: 72px;
+  }
+ 
+  .features {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    /* margin-bottom: 50px; */
+  }
+  .features:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+  }
+
+  /* our menu */
+
+ .divider {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+ }
+ .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 50px 0;
+  align-items: center;
+ }
+ .menu, .tag1 {
+  align-self: center;
+ }
+ .tag1 {
+  background-color: #149f39;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s 0.1s ease-in-out;
+ }
+ .tag1:hover{
+  box-shadow: 1px 1px 1px 1px black;
+  background-color: #fff;
+  color: #149f39;
+ }
+ .grid {
+  display: grid;
+  /* padding: 20px; */
+  gap: 10px;
+  grid-template-areas: 
+  "I1 I1 I2 I3"
+  "I1 I1 I2 I7"
+  "I4 I5 I6 I7";
+ }
+ .grid-image {
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  height: 100%;
+  width: 100%;
+ }
+ .grid-image:hover {
+   transform: scale(1.02);
+   transition: 0.2s ease-in-out;
+ }
+ .item1 {
+  grid-area: I1;
+ }
+ .item2 {
+  grid-area: I2;
+ }
+ .item3 {
+  grid-area: I3;
+ }
+ .item4 {
+  grid-area: I4;
+ }
+ .item5 {
+  grid-area: I5;
+ }
+ .item6 {
+  grid-area: I6;
+ }
+ .item7 {
+  grid-area: I7;
+ }
+ /* footer */
+ footer {
+  background-color: #fff0db;
+ }
+.footer-container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.link_lists h3 {
+  margin-bottom: 10px;
+  color: gray;
+}
+.new-letter  h3 {
+  margin-bottom: 10px;
+  color: gray;
+}
+.link_lists ul {
+  list-style: none;
+}
+.link_lists ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.new-letter input {
+ padding: 5px 40px;
+ margin-bottom: 10px;
+}
+.icon-container {
+  display: flex;
+  gap: 15px;
+  font-size: 32px;
+}
+
+@media (max-width: 786px) {
+  .footer-container {
+  flex-direction: column;
+}
+.logo-container {
+  position: relative;
+  left: 10px;
+}
+}
+.atta {
+  font-size: 50px;
+}
+
+
+
+  
